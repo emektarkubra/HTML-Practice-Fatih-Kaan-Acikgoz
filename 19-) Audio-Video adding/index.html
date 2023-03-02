@@ -1,0 +1,56 @@
+<!-- 
+    SES DOSYASI
+
+    <audio controls autoplay loop>
+        <source src="kaynaklar/sesler/Audio 1.mpeg">
+    </audio> 
+
+    <video controls autoplay loop>
+        <source src="kaynaklar/videolar/Defne.mp4">
+    </video>
+
+        loop -> tekrar başa sarmak için
+        autoplay -> hemen kayıt başlar
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <audio controls loop>
+        <source src="kaynaklar/sesler/Audio 1.mpeg" type="audio/wav">
+    </audio>
+
+    <!-- ya da
+    <audio src="kaynaklar/sesler/Audio 1.mpeg" controls>Tarayıcı bu içerik türünü desteklemiyor.</audio> -->
+    
+    <br>
+
+    <audio controls>
+        <source src="kaynaklar/sesler/Audio 1.mpeg" type="audio/wav">
+    </audio>
+
+    <br>
+
+    <video width="20%" height="300px" controls loop>
+        <source src="kaynaklar/videolar/Defne.mp4" type="video/mp4">
+    </video>
+
+    <br>
+
+    <video width="20%" height="300px" controls loop>
+        <source src="kaynaklar/videolar/Defne.mp4" type="video/mp4">
+    </video>
+
+</body>
+
+</html>

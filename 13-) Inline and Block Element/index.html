@@ -1,0 +1,95 @@
+<!-- 
+    Block elementler -> olduğu tüm satırı kaplar
+        div
+        h1
+        form
+        ul, ol
+        p
+        table
+    Inline elementler -> sadece olduğu alanı kaplar
+        <b></b>
+        <strong></strong>
+        <i></i>
+        <em></em>
+        <span></span>
+        <a href=""></a>
+        <img src="" alt="">
+        <input type="">
+    Block element içerisinde inline element kullanılabilir ancak inline içinde block element kullanılamaz!
+    <div></div> -> block elementi yapar
+    <span></span> ->
+    Block elementlerde height ve width verilebilir, inline'da verilemez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Block elementler -->
+
+    <div style="border:1px solid red;">Lorem ipsum dolor sit amet.</div>
+    <h1 style="border:1px solid red;">Lorem ipsum dolor sit amet.</h1>
+    <form style="border: 1px solid red">Lorem ipsum dolor sit amet.</form>
+    <ul style="border: 1px solid blue">
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <ol style="border: 1px solid blue">
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+        <li style="border: 1px solid red">Lorem ipsum dolor sit amet.</li>
+    </ol>
+    <p style="border: 1px solid red">Lorem ipsum dolor sit amet.</p>
+    <table style="border: 1px solid red">
+        <thead>
+            <tr>
+                <th>İsim</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kübra</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- Inline elementler -->
+
+    <b style="border: 1px solid red">Lorem ipsum dolor sit amet.</b>
+    <strong style="border: 1px solid red">Lorem ipsum dolor sit amet.</strong>
+    <i style="border: 1px solid red">Lorem ipsum dolor sit amet.</i>
+    <em style="border: 1px solid red">Lorem ipsum dolor sit amet.</em>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <a style="border: 1px solid red" href="https://www.google.com">Google'a git</a>
+    <img style="border: 1px solid red" width="15%" src="img/laptop.jpg" alt="Resim bulunamadı">
+    <input width="20%" type="text">
+
+    <!-- div -->
+
+    <div>
+        <img style="border: 1px solid red" width="15%" src="img/coder.jpeg" alt="Resim bulunamadı">
+        <br>
+        <b>Kodlama yapmak</b>
+    </div>
+
+    <div>
+        <img style="border: 1px solid red" width="15%" src="img/laptop.jpg" alt="Resim bulunamadı">
+        <br>
+        <b>Bir tane laptop var</b>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!-- 
+    li -> list item (listenin elemanı)
+    
+    Unordered list (ul)-sıralanmamış 
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    Ordered list (ol)-sıralanmış
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol> 
+
+     type="" -> sıralamanın tipi belirlenir (mesela ul'de square, bullet ya da ol'de 1,i,I gibi)
+     start="3" -> type'ın kaçıncısından başlaması gerektiği seçilir (mesela 2 yazılırsa ii'den başlar gibi)
+     reversed start="3" -> type sıralaması tersten başlar
+
+        <ol start="3" type="i">
+            <li></li>
+        </ol> 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Listeler</h1>
+    <h2>Sırasız listeler</h2>
+    <ul type="square">
+        Programlama dilleri
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ul>
+    <h2>Sıralı listeler</h2>
+    <ol type="I">
+        Ön yüzde kullanılan teknolojiler
+        <li>HTML5</li>
+            <ol start="3" type="i">
+                <li>Eski html kodları</li>
+                <li>Yeni html kodları</li>
+            </ol>
+        <li>CSS3</li>
+        <li>Bootstrap</li>
+    </ol>
+
+    <ol reversed start="3" type="1">
+        Ön yüzde kullanılan teknolojiler
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Bootstrap</li>
+       
+    </ol>
+
+</body>
+
+</html>

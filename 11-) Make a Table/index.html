@@ -1,0 +1,162 @@
+<!-- 
+    thead -> satır başlığı
+    tbody -> sütun başlığı
+    tr -> satır (row)
+    th -> başlık
+    td -> data
+    tc -> sütun (column)
+
+     <table border="1"> -> hepsinde çerçeve oluşturur (html5 desteklemiyor CSS ile yapılır)
+     <tr bgcolor="turquoise"> -> satırın background rengi değiştirilir
+     <table style="width: 100%; height: 300px;"> -> tablonun genişlik ve yüksekliğini ayarlarız (CSS'te)
+     <th colspan="2">Mavi-Yeşil</th> -> 2 tane satır hücresi birleştirir
+     <td rowspan="2" ></td> -> 2 sütunu birleştirir
+     <td style="text-align: center;"> -> yazıyı merkeze alır
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1" style="width: 100%; height: 300px;">
+        <thead>
+            <tr bgcolor="yellow">
+                <th>Takım ismi</th>
+                <th>Win</th>
+                <th>Drawn</th>
+                <th>Lose</th>
+                <th>Puan</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr bgcolor="blue">
+                <td>Galatasaray</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="blue">
+                <td>Fenerbahçe</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="turquoise">
+                <td>Beşiktaş</td>
+                <td>2</td>
+                <td>4</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+            <tr bgcolor="turquoise">
+                <td>Trabzonspor</td>
+                <td>1</td>
+                <td>5</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kırmızı</th>
+                <th colspan="2">Mavi-Yeşil</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td style="height: 30px;" bgcolor="red"></td>
+                <td style="width: 30px;" bgcolor="blue"></td>
+                <td style="width: 30px;" bgcolor="green"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kırmızı</th>
+                <th>Mavi</th>
+                <th>Yeşil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="height: 30px;" bgcolor="red"></td>
+                <td style="width: 30px;" bgcolor="blue"></td>
+                <td rowspan="2" style="width: 30px;" bgcolor="green"></td>
+            </tr>
+            <tr>
+                <td>Kalem</td>
+                <td>Gökyüzü</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Kırmızı</th>
+                <th>Yeşil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" style="height: 50px;" bgcolor="red"></td>
+            </tr>
+            <tr>
+                <td style="height: 50px;" bgcolor="red"></td>
+                <td rowspan="2" style="height: 50px;" bgcolor="green"></td>
+            </tr>
+            <tr>
+                <td style="height: 50px;" bgcolor="red"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
